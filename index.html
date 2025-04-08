@@ -20,12 +20,21 @@
       background-color: #0A1A3F; /* azul oscuro */
       color: white;
       padding: 2rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
     }
 
     header img {
       max-width: 280px;
       height: auto;
+    }
+
+    .header-text {
+      max-width: 600px;
+      text-align: left;
     }
 
     main {
@@ -49,13 +58,18 @@
       text-decoration: underline;
     }
 
-    @media (max-width: 600px) {
-      header, main, footer {
-        padding: 1rem;
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header-text {
+        text-align: center;
       }
 
       header img {
-        max-width: 180px;
+        max-width: 200px;
       }
     }
   </style>
@@ -63,8 +77,10 @@
 <body>
   <header>
     <img src="APO%20DIGITAL%20LOGO.png" alt="Logo APO Digital Learning">
-    <h1>Bienvenidos a APO Digital Learning</h1>
-    <p>Diseño y Evaluación de Aprendizaje Digital con Impacto</p>
+    <div class="header-text">
+      <h1>Bienvenidos a APO Digital Learning</h1>
+      <p>Diseño y Evaluación de Aprendizaje Digital con Impacto</p>
+    </div>
   </header>
   <main>
     <h2>¿Quiénes somos?</h2>
