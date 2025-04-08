@@ -16,8 +16,27 @@
       color: #333333;
     }
 
+    nav {
+      background-color: #0A1A3F;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      font-size: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     header {
-      background-color: #0A1A3F; /* azul oscuro */
+      background-color: #0A1A3F;
       color: white;
       padding: 2rem;
       display: flex;
@@ -28,7 +47,7 @@
     }
 
     header img {
-      max-width: 280px;
+      max-width: 200px;
       height: auto;
     }
 
@@ -39,14 +58,16 @@
 
     main {
       padding: 2rem;
-      text-align: center;
+      text-align: left;
+      max-width: 800px;
+      margin: auto;
     }
 
     footer {
       background-color: #0A1A3F;
       color: white;
-      text-align: center;
-      padding: 1rem;
+      text-align: left;
+      padding: 1rem 2rem;
     }
 
     a {
@@ -69,12 +90,22 @@
       }
 
       header img {
-        max-width: 200px;
+        max-width: 150px;
+      }
+
+      footer {
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#quienes-somos">¿Quiénes somos?</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
   <header>
     <img src="APO%20DIGITAL%20LOGO.png" alt="Logo APO Digital Learning">
     <div class="header-text">
@@ -83,21 +114,27 @@
     </div>
   </header>
   <main>
-    <h2>¿Quiénes somos?</h2>
-    <p>Somos una empresa dedicada a transformar la educación en línea a través de estrategias de diseño instruccional, evaluación de calidad y tecnologías educativas innovadoras. Brindamos servicios personalizados para instituciones y profesionales del aprendizaje digital.</p>
+    <section id="quienes-somos">
+      <h2>¿Quiénes somos?</h2>
+      <p>Somos una empresa dedicada a transformar la educación en línea a través de estrategias de diseño instruccional, evaluación de calidad y tecnologías educativas innovadoras. Brindamos servicios personalizados para instituciones y profesionales del aprendizaje digital.</p>
+    </section>
 
-    <h2>¿Qué ofrecemos?</h2>
-    <ul>
-      <li>Diseño instruccional y desarrollo de cursos en línea</li>
-      <li>Evaluación de calidad bajo estándares como Quality Matters</li>
-      <li>Capacitación docente en herramientas digitales</li>
-      <li>Consultoría en implementación de tecnología educativa</li>
-    </ul>
+    <section id="servicios">
+      <h2>¿Qué ofrecemos?</h2>
+      <ul>
+        <li>Diseño instruccional y desarrollo de cursos en línea</li>
+        <li>Evaluación de calidad bajo estándares como Quality Matters</li>
+        <li>Capacitación docente en herramientas digitales</li>
+        <li>Consultoría en implementación de tecnología educativa</li>
+      </ul>
+    </section>
 
-    <h2>Contacto</h2>
-    <p>Correo: <a href="mailto:apodigitalearning@outlook.com">apodigitalearning@outlook.com</a></p>
-    <p>WhatsApp USA: <a href="https://wa.me/19564577332" target="_blank">+1 956-457-7332</a></p>
-    <p>WhatsApp México: <a href="https://wa.me/52899113753" target="_blank">+52 899 11 3753</a></p>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Correo: <a href="mailto:apodigitalearning@outlook.com">apodigitalearning@outlook.com</a></p>
+      <p>WhatsApp USA: <a href="https://wa.me/19564577332" target="_blank">+1 956-457-7332</a></p>
+      <p>WhatsApp México: <a href="https://wa.me/52899113753" target="_blank">+52 899 11 3753</a></p>
+    </section>
   </main>
   <footer>
     <p>&copy; 2025 APO Digital Learning. Todos los derechos reservados.</p>
