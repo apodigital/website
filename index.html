@@ -3,83 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="APO Digital Learning: Diseño y Evaluación de Aprendizaje Digital">
+  <meta name="keywords" content="educación, tecnología, diseño instruccional, aprendizaje digital">
+  <meta name="author" content="APO Digital Learning">
   <title>APO Digital Learning</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Century Gothic', 'AppleGothic', sans-serif;
       margin: 0;
-      background-color: white;
-      color: #1a1a1a;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333333;
     }
+
     header {
-      background-color: #002147;
+      background-color: #0A1A3F; /* azul oscuro */
       color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+      padding: 2rem;
+      text-align: center;
     }
+
     header img {
-      height: 60px;
+      max-width: 280px;
+      height: auto;
     }
-    nav a {
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #0A1A3F;
       color: white;
-      text-decoration: none;
-      margin-left: 1rem;
-      font-weight: 500;
+      text-align: center;
+      padding: 1rem;
     }
-    nav a:hover {
+
+    a {
+      color: #0A1A3F;
+      text-decoration: none;
+    }
+
+    a:hover {
       text-decoration: underline;
     }
-    .hero {
-      background-color: #f5f5f5;
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      color: #002147;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-    }
-    .section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h2 {
-      color: #002147;
-      margin-bottom: 1rem;
-    }
-    .card {
-      background-color: #e9ecef;
-      padding: 1.5rem;
-      border-radius: 12px;
-      margin-bottom: 1.5rem;
-    }
-    footer {
-      background-color: #002147;
-      color: white;
-      text-align: center;
-      padding: 2rem;
-    }
-    footer p {
-      margin: 0.5rem 0;
-    }
+
     @media (max-width: 600px) {
-      header, .section {
-        text-align: center;
+      header, main, footer {
+        padding: 1rem;
       }
-      nav {
-        margin-top: 1rem;
-      }
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
+
+      header img {
+        max-width: 180px;
       }
     }
   </style>
@@ -87,48 +63,32 @@
 <body>
   <header>
     <img src="APO%20DIGITAL%20LOGO.png" alt="Logo APO Digital Learning">
-    <nav>
-      <a href="#servicios">Servicios</a>
-      <a href="#sobre">Quiénes Somos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+    <h1>Bienvenidos a APO Digital Learning</h1>
+    <p>Diseño y Evaluación de Aprendizaje Digital con Impacto</p>
   </header>
+  <main>
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos una empresa dedicada a transformar la educación en línea a través de estrategias de diseño instruccional, evaluación de calidad y tecnologías educativas innovadoras. Brindamos servicios personalizados para instituciones y profesionales del aprendizaje digital.</p>
 
-  <section class="hero">
-    <h1>Soluciones innovadoras en educación digital</h1>
-    <p>Diseño instruccional, evaluación de calidad y estrategias para el aprendizaje en línea.</p>
-  </section>
+    <h2>¿Qué ofrecemos?</h2>
+    <ul>
+      <li>Diseño instruccional y desarrollo de cursos en línea</li>
+      <li>Evaluación de calidad bajo estándares como Quality Matters</li>
+      <li>Capacitación docente en herramientas digitales</li>
+      <li>Consultoría en implementación de tecnología educativa</li>
+    </ul>
 
-  <section class="section" id="servicios">
-    <h2>Servicios</h2>
-    <div class="card">
-      <h3>Diseño Instruccional</h3>
-      <p>Diseño de cursos en línea con enfoque en el aprendizaje activo y alineación de objetivos, actividades y evaluación.</p>
-    </div>
-    <div class="card">
-      <h3>Evaluación de Calidad</h3>
-      <p>Evaluación de cursos y programas con base en estándares como Quality Matters (QM) y mejores prácticas pedagógicas.</p>
-    </div>
-    <div class="card">
-      <h3>Asesoría y Capacitación</h3>
-      <p>Capacitación a docentes y líderes educativos en tecnologías, metodologías y herramientas de educación en línea.</p>
-    </div>
-  </section>
-
-  <section class="section" id="sobre">
-    <h2>Quiénes Somos</h2>
-    <p>APO Digital Learning nace de la experiencia de más de 15 años en diseño instruccional, evaluación educativa y liderazgo en innovación tecnológica. Nuestra misión es mejorar la experiencia del aprendizaje en línea a través de estrategias pedagógicas centradas en el estudiante.</p>
-  </section>
-
-  <section class="section" id="contacto">
     <h2>Contacto</h2>
-    <p>¿Te gustaría colaborar con nosotros o saber más?</p>
-    <p>Escríbenos a <strong>apodigitalearning@outlook.com</strong></p>
-  </section>
-
+    <p>Correo: <a href="mailto:apodigitalearning@outlook.com">apodigitalearning@outlook.com</a></p>
+    <p>WhatsApp USA: <a href="https://wa.me/19564577332" target="_blank">+1 956-457-7332</a></p>
+    <p>WhatsApp México: <a href="https://wa.me/52899113753" target="_blank">+52 899 11 3753</a></p>
+  </main>
   <footer>
-    <p>&copy; 2025 APO Digital Learning</p>
-    <p>Sitio desarrollado para impulsar experiencias de aprendizaje efectivas y accesibles.</p>
+    <p>&copy; 2025 APO Digital Learning. Todos los derechos reservados.</p>
   </footer>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/22/audio_6ba74624ce.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
 </body>
 </html>
