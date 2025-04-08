@@ -44,10 +44,17 @@
       justify-content: flex-start;
       gap: 2rem;
       flex-wrap: wrap;
+      position: relative;
+    }
+
+    #google_translate_element {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
     }
 
     header img {
-      max-width: 100px;
+      max-width: 70px;
       height: auto;
     }
 
@@ -106,7 +113,7 @@
       }
 
       header img {
-        max-width: 80px;
+        max-width: 60px;
       }
 
       footer {
@@ -116,6 +123,7 @@
   </style>
 </head>
 <body>
+  <div id="google_translate_element"></div>
   <nav>
     <a href="#quienes-somos">¿Quiénes somos?</a>
     <a href="#servicios">Servicios</a>
@@ -169,5 +177,14 @@
     <source src="https://cdn.pixabay.com/audio/2022/03/22/audio_6ba74624ce.mp3" type="audio/mpeg">
     Tu navegador no soporta audio HTML5.
   </audio>
-</body>
-</html>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'es',
+        includedLanguages: 'es,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate
